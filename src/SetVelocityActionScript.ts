@@ -3,13 +3,12 @@
 
 /* START OF COMPILED CODE */
 
-import ArcadeObjectScript from "./ArcadeObjectScript";
 import { ScriptNode } from "@phasereditor2d/scripts-core";
 import Phaser from "phaser";
 /* START-USER-IMPORTS */
 /* END-USER-IMPORTS */
 
-export default class SetVelocityActionScript extends ArcadeObjectScript {
+export default class SetVelocityActionScript extends ScriptNode {
 
 	constructor(parent: ScriptNode | Phaser.GameObjects.GameObject | Phaser.Scene) {
 		super(parent);
@@ -26,7 +25,10 @@ export default class SetVelocityActionScript extends ArcadeObjectScript {
 
 	execute(...args: any[]): void {
 
-		this.body.setVelocity(this.velocityX, this.velocityY);
+		const obj: Phaser.Types.Physics.Arcade.GameObjectWithDynamicBody =
+			this.getActionTargetObject(args);
+
+		obj.body.setVelocity(this.velocityX, this.velocityY);
 	}
 
 	/* END-USER-CODE */

@@ -1,9 +1,9 @@
 // You can write more code here
 /* START OF COMPILED CODE */
-import ArcadeObjectScript from "./ArcadeObjectScript";
+import { ScriptNode } from "@phasereditor2d/scripts-core";
 /* START-USER-IMPORTS */
 /* END-USER-IMPORTS */
-export default class SetVelocityYActionScript extends ArcadeObjectScript {
+export default class SetVelocityYActionScript extends ScriptNode {
     constructor(parent) {
         super(parent);
         /* START-USER-CTR-CODE */
@@ -13,7 +13,8 @@ export default class SetVelocityYActionScript extends ArcadeObjectScript {
     velocityY = 0;
     /* START-USER-CODE */
     execute(...args) {
-        this.body.setVelocityY(this.velocityY);
+        const obj = this.getActionTargetObject(args);
+        obj.body.setVelocityY(this.velocityY);
     }
 }
 /* END OF COMPILED CODE */

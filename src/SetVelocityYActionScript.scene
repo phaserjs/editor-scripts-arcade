@@ -15,7 +15,7 @@
     },
     "displayList": [
         {
-            "prefabId": "0cfd378a-103c-4621-9ffe-fe9e576a202f",
+            "type": "ScriptNode",
             "id": "8cc82a40-fe8b-4cb5-98b6-3d28f19d0bb2",
             "label": "arcadeObjectScript"
         }
