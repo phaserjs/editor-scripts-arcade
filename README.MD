@@ -48,6 +48,12 @@ The actions:
 * **Set Velocity Action** - Sets the velocity of the script's game object.
 * **Set X Velocity Action** - Sets the velocity's X value to the script's game object.
 * **Set Y Velocity Action** - Sets the velocity's Y value to the script's game object.
+* **Get GameObject From Body Action** - Gets the game object for the given physics body.
+* **Make Object Collider Action** - Creates a physics collider with the game object.
+* **Set Body Enable Action** - To enable/disable physics in the game object.
+* **Start Flip With Velocity Action** - Starts flipping the game object heading to the velocity vector.
+* **Start Follow Pointer Action** - Starts moving the game object toward the pointer position. 
+* **If Body Touching** - A conditional action to test if the body touching state.
 
 The base classes:
 
@@ -80,3 +86,45 @@ This action sets the given **X** velocity to the game object.
 *Class: `SetVelocityXActionScript`*
 
 This action sets the given **X** velocity to the game object.
+
+## Get Game Object From Body Action
+
+This action gets the game object from the given body. The body is passed to this action in the first argument, and this action passes, in the first argument, the associated game object to the children. You can combine this action with the **On World Bounds Collide Event** event.
+
+## If Body Touching
+
+This action tests the game object `body.touching` state. If it is touching, it executes the actions of the **Then actions** node, else, it executes the actions of the **Else actions** node.
+
+This action provides the **Left**, **Right**, **Top**, and **Bottom** boolean parameters. If any of these parameters is `true` and the body touching state of the same side is `true`, then we say the object is touching and then execute the **Then actions**.
+
+This action allows the **Action Target** component.
+
+## Make Object Collider Action
+
+This action creates a collider with the game object and the given **Collide With** object. If you check the **Overlap Only** parameter, then it uses an overlap instead of a collide method.
+
+When there is a collision, this action executes the children nodes and passes as argument the collision event arguments.
+
+This action allows the **Action Target** component.
+
+## Set Body Enable Action
+
+This action updates the body's enable state with the **Enable** parameter's value.
+
+This action allows the **Action Target** component.
+
+## Start Flip with Velocity Action
+
+This action starts monitoring the game object velocity vector and change the flip state of the game object.
+
+If the **Flip Horizontal** is on, then it changes the `flipX` property of the object. If the **Flip Vertical** is on, then it changes the `flipY` property of the object.
+
+By default, it assumes the object is facing left and top in its initial position. You can change it with the **Facing Left** and **Facing Right** parameters.
+
+This action allows the **Action Target** component.
+
+## Start Follow Pointer Action
+
+This action starts monitoring the pointer and moves the game object towards the pointer's position.
+
+This action allows the **Action Target** component.
