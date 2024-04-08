@@ -1,7 +1,7 @@
 // You can write more code here
 /* START OF COMPILED CODE */
-import { ScriptNode } from "@phasereditor2d/scripts-core";
-import { ExecChildrenActionScript } from "@phasereditor2d/scripts-core";
+import { ScriptNode } from "@phaserjs/editor-scripts-core";
+import { ExecChildrenActionScript } from "@phaserjs/editor-scripts-core";
 /* START-USER-IMPORTS */
 /* END-USER-IMPORTS */
 export default class IfBodyTouchingScript extends ScriptNode {

@@ -1,6 +1,6 @@
 // You can write more code here
 /* START OF COMPILED CODE */
-import { OnEventScript } from "@phasereditor2d/scripts-core";
+import { OnEventScript } from "@phaserjs/editor-scripts-core";
 import Phaser from "phaser";
 /* START-USER-IMPORTS */
 /* END-USER-IMPORTS */

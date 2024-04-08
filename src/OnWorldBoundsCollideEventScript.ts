@@ -3,8 +3,8 @@
 
 /* START OF COMPILED CODE */
 
-import { OnEventScript } from "@phasereditor2d/scripts-core";
-import { ScriptNode } from "@phasereditor2d/scripts-core";
+import { OnEventScript } from "@phaserjs/editor-scripts-core";
+import { ScriptNode } from "@phaserjs/editor-scripts-core";
 import Phaser from "phaser";
 /* START-USER-IMPORTS */
 /* END-USER-IMPORTS */

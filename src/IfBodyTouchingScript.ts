@@ -3,9 +3,9 @@
 
 /* START OF COMPILED CODE */
 
-import { ScriptNode } from "@phasereditor2d/scripts-core";
+import { ScriptNode } from "@phaserjs/editor-scripts-core";
 import Phaser from "phaser";
-import { ExecChildrenActionScript } from "@phasereditor2d/scripts-core";
+import { ExecChildrenActionScript } from "@phaserjs/editor-scripts-core";
 /* START-USER-IMPORTS */
 /* END-USER-IMPORTS */
 

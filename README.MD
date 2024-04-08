@@ -10,13 +10,13 @@ The scripts are coded in TypeScript with ES modules.
 
 This package depends on the following packages:
 
-- `@phasereditor2d/scripts-core`
+- `@phaserjs/editor-scripts-core`
 
 To install this in your game you have to install dependencies too:
 
 ```
-npm install @phasereditor2d/scripts-core
-npm install @phasereditor2d/scripts-arcade
+npm install @phaserjs/editor-scripts-core
+npm install @phaserjs/editor-scripts-arcade
 ```
 
 Also, you should add this package to the `phasereditor2d.config.json` file in your project, in the `scripts` section:
@@ -24,8 +24,8 @@ Also, you should add this package to the `phasereditor2d.config.json` file in yo
 ```json
 {
     "scripts": [
-        "@phasereditor2d/scripts-core",
-        "@phasereditor2d/scripts-arcade",
+        "@phaserjs/editor-scripts-core",
+        "@phaserjs/editor-scripts-arcade",
     ]
 }
 ```
