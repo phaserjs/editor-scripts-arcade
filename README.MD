@@ -1,8 +1,8 @@
-# Phaser Editor 2D Arcade Physics Scripts (library)
+# Phaser Editor Arcade Physics Scripts (library)
 
-This project contains a few Phaser Editor 2D scripts for setting Arcade physics to objects.
+This project contains a few Phaser Editor scripts for setting Arcade physics to objects.
 
-These script nodes are very basic and may fit on any Phaser Editor 2D project.
+These script nodes are very basic and may fit on any Phaser Editor project.
 
 The scripts are coded in TypeScript with ES modules.
 
@@ -32,8 +32,8 @@ Also, you should add this package to the `phasereditor2d.config.json` file in yo
 
 ## Installing (vanilla JavaScript)
 
-* Get the files in the [browser](./browser/) folder and copy them into your JavaScript project. It includes Phaser Editor 2D files, JavaScript files, and TypeScript type definitions.
-* Add a `script` tag to the `index.html` file to load the `lib/phasereditor2d_scripts_arcade.js` file.
+* Get the files in the [browser](./browser/) folder and copy them into your JavaScript project. It includes Phaser Editor files, JavaScript files, and TypeScript type definitions.
+* Add a `script` tag to the `index.html` file to load the `lib/phaserjs_editor_scripts_arcade.js` file.
 
 ## Summary
 
