@@ -1,5 +1,7 @@
 # Phaser Editor Arcade Physics Scripts (library)
 
+**Warning: This project is deprecated. It is now part of the [@phaserjs/editor-scripts-quick](https://www.npmjs.com/package/@phaserjs/editor-scripts-quick) library.**
+
 This project contains a few Phaser Editor scripts for setting Arcade physics to objects.
 
 These script nodes are very basic and may fit on any Phaser Editor project.
