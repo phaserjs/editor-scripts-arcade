@@ -1,6 +1,6 @@
 {
   "name": "@phaserjs/editor-scripts-arcade",
-  "version": "2.0.1",
+  "version": "2.0.2",
   "description": "Phaser Editor audio scripts.",
   "main": "out/index.js",
   "types": "types/index.d.ts",
